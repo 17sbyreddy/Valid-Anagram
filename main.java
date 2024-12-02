@@ -1,6 +1,11 @@
 class Solution {
     public boolean isAnagram(String s, String t) {
 
+        if(s.length() != t.length()){
+            return false;
+        }
+
+        //create two hashamps with key  being the character and value being the number of occurences and compare the two hashmaps
         HashMap<Character, Integer> map1 = new HashMap<>();
         HashMap<Character, Integer> map2 = new HashMap<>();
 
